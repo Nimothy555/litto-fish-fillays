@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Litto's Fish Fillays</title>
+    <!-- Style -->
+    <style>
+       body {
+          background-color: #f0f8ff; /* Alice blue for background */
+          font-family: "Arial", sans-serif;
+          margin: 0;
+          padding: 0;
+       }
+       header {
+          background-color: coral; /* Coral for header */
+          padding: 15px;
+       }
+       h1 {
+          color: white; /* White text for contrast */
+          text-align: center;
+          font-size: 2.5em;
+       }
+       nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+       }
+       nav ul li {
+          margin: 0 10px;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: 5px 10px;
+          background-color: #333333;
+          border-radius: 5px;
+       }
+       nav ul li a.active {
+          background-color: yellow; /* Highlight active link */
+          color: black;
+       }
+       main {
+          padding: 20px;
+          max-width: 900px;
+          margin: 0 auto; /* Center content */
+       }
+       .category {
+          margin-bottom: 30px;
+       }
+       .category h2 {
+          text-align: center;
+          color: coral; /* Coral for section headers */
+          margin-top: 20px;
+          font-size: 2em;
+       }
+       .menu-item {
+          display: flex;
+          align-items: center;
+          background-color: #ffffe0; /* Light yellow for item backgrounds */
+          border: 1px solid coral;
+          border-radius: 10px;
+          padding: 15px;
+          margin: 10px auto;
+          max-width: 600px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+       }
+       .menu-item img {
+          max-width: 150px; /* Adjusted size for better visuals */
+          margin-right: 15px; /* Space between image and text */
+          border-radius: 8px; /* Rounded corners */
+          border: 2px solid coral; /* Coral border to match theme */
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+       }
+       .menu-item h3 {
+          margin: 0;
+          color: coral;
+          font-size: 1.5em;
+       }
+       .menu-item p {
+          margin: 5px 0;
+          font-size: 1.2em;
+          color: #333333;
+       }
+       .menu-item span {
+          font-weight: bold;
+          font-size: 1.1em;
+          color: #333333;
+       }
+       footer {
+          background-color: coral;
+          color: white;
+          text-align: center;
+          padding: 10px;
+       }
+       footer p {
+          margin: 0;
+          font-size: 1em;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav class="sitenavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Appetizers Section -->
+        <div class="category">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="images/teriyaki-wings.jpg" alt="Teriyaki Wings">
+                <div>
+                    <h3>Teriyaki Wings</h3>
+                    <p>Golden-fried teriyaki wings with blue cheese and celery sticks</p>
+                    <span>$18.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/fried-onion-rings.jpg" alt="Fried Onion Rings">
+                <div>
+                    <h3>Fried Onion Rings</h3>
+                    <p>Deep-fried onion rings with a side of spicy mayonnaise</p>
+                    <span>$21.30</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses Section -->
+        <div class="category">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <img src="images/grilled-atlantic-salmon-burger.jpg" alt="Atlantic Salmon Burger">
+                <div>
+                    <h3>Atlantic Salmon Burger</h3>
+                    <p>Perfectly grilled Atlantic salmon served in a gluten-free bun with our special salad and sauce</p>
+                    <span>$25.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Litto's Fish Fillays. All rights reserved.</p>
+    </footer>
+</body>
+</html>

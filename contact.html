@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Litto's Fish Fillays</title>
+    <!-- Style -->
+    <style>
+       body {
+          background-color: #f0f8ff; /* Alice blue for background */
+          font-family: "Arial", sans-serif;
+       }
+       header {
+          background-color: coral; /* Coral header styling */
+          padding: 15px;
+       }
+       h1 {
+          color: white; /* White text for contrast */
+          text-align: center;
+          font-size: 2.5em;
+       }
+       nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+       }
+       nav ul li {
+          margin: 0 10px;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: 5px 10px;
+          background-color: #333333;
+          border-radius: 5px;
+       }
+       nav ul li a.active {
+          background-color: yellow; /* Highlight active link */
+          color: black;
+       }
+       main {
+          padding: 20px;
+       }
+       .contact-section {
+          text-align: center;
+          color: #333333; /* Neutral text color */
+       }
+       .contact-section h1 {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+       }
+       .contact-details {
+          margin: 20px auto;
+          text-align: left;
+          max-width: 600px;
+       }
+       .contact-details h2 {
+          color: coral; /* Coral for section headers */
+          margin-top: 15px;
+       }
+       .contact-details p {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+       }
+       .contact-form {
+          margin-top: 20px;
+          text-align: left;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+       }
+       .contact-form label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: coral;
+       }
+       .contact-form input, .contact-form textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid coral;
+          border-radius: 5px;
+       }
+       .contact-form button {
+          display: inline-block;
+          background-color: coral;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          cursor: pointer;
+       }
+       .contact-form button:hover {
+          background-color: #e6735e; /* Slightly darker coral for hover effect */
+       }
+       footer {
+          background-color: coral;
+          color: white;
+          text-align: center;
+          padding: 10px;
+       }
+       footer p {
+          margin: 0;
+          font-size: 1em;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="sitenavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <p>We’re here to serve you the best fish and chips experience!</p>
+            
+            <!-- Location and Hours -->
+            <div class="contact-details">
+                <h2>Location</h2>
+                <p>123 Ocean Drive, Boston, MA</p>
+                
+                <h2>Hours of Operation</h2>
+                <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+            </div>
+            
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Litto's Fish Fillays. All rights reserved.</p>
+    </footer>
+</body>
+</html>

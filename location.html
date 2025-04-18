@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Litto's Fish Fillays</title>
+    <!-- Style -->
+    <style>
+       body {
+          background-color: #f0f8ff; /* Alice blue background */
+          font-family: "Arial", sans-serif;
+       }
+       header {
+          background-color: coral; /* Coral header */
+          padding: 15px;
+       }
+       h1 {
+          color: white; /* White text for contrast */
+          text-align: center;
+          font-size: 2.5em;
+       }
+       nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+       }
+       nav ul li {
+          margin: 0 10px;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: 5px 10px;
+          background-color: #333333;
+          border-radius: 5px;
+       }
+       nav ul li a.active {
+          background-color: yellow; /* Highlight active link */
+          color: black;
+       }
+       main {
+          padding: 20px;
+       }
+       .location-section {
+          text-align: center;
+          color: #333333; /* Neutral text color */
+       }
+       .location-section h1 {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+       }
+       .address {
+          margin: 20px auto;
+          text-align: left;
+          max-width: 600px;
+       }
+       .address h2 {
+          color: coral; /* Coral for section headers */
+          margin-top: 15px;
+       }
+       .address p {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+       }
+       .map {
+          text-align: center;
+          margin: 20px auto;
+          max-width: 600px;
+       }
+       .map iframe {
+          width: 100%;
+          height: 450px;
+          border: 1px solid coral;
+          border-radius: 5px;
+       }
+       footer {
+          background-color: coral;
+          color: white;
+          text-align: center;
+          padding: 10px;
+       }
+       footer p {
+          margin: 0;
+          font-size: 1em;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find Us</h1>
+        <nav class="sitenavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="location.html" class="active">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="location-section">
+            <p>We are located in the heart of New England, ready to serve you the freshest salmon-based fish and chips!</p>
+            
+            <!-- Address -->
+            <div class="address">
+                <h2>Our Address</h2>
+                <p>123 Ocean Drive<br>Boston, MA</p>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="map">
+                <h2>Visit Us</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5399741231885!2d-71.05888078448776!3d42.36009127918637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37085b0ec750f%3A0x8c00e93d8dbd9b3f!2s123%20Ocean%20Drive%2C%20Boston%2C%20MA!5e0!3m2!1sen!2sus!4v1680841234567!5m2!1sen!2sus"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Litto's Fish Fillays. All rights reserved.</p>
+    </footer>
+</body>
+</html>
